@@ -51,7 +51,7 @@ import predict
 
 pages_dict = {'Home':home, 'View Data':data, 'Visualised Data':visualise, 'Predict':predict}
 st.sidebar.title('NAVIGATION')
-user_choice = st.sidebar.radio('Go To', tuple(pages_dict.keys()))
+user_choice = st.sidebar.radio("Go To", tuple(pages_dict.keys()))
 if user_choice == 'Home':
     home.app()
 else:
